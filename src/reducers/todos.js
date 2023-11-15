@@ -1,4 +1,5 @@
-const todos = (state = [], action) => {
+const initialState = JSON.parse(localStorage.getItem("todos")) || []
+const todos = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_TODO':
       return [
