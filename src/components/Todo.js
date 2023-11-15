@@ -3,6 +3,13 @@ import PropTypes from 'prop-types';
 
 const Todo = ({ toggleTodo, removeTodo, completed, text }) => (
   <div className='todo'>
+    <input 
+      type='checkbox'
+      onClick={toggleTodo}
+      checked={completed ? true : false}
+      
+      >
+    </input>
     <li
       className='todoText'
       onClick={toggleTodo}
