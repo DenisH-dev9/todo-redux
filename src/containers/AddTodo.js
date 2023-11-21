@@ -6,7 +6,7 @@ const AddTodo = ({ dispatch }) => {
   let input;
 
   return (
-    <div className='AddTodoInput'>
+    <div className='addTodo'>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -17,8 +17,11 @@ const AddTodo = ({ dispatch }) => {
           input.value = '';
         }}
       >
-        <input ref={(node) => (input = node)} />
-        <button type="submit">Add Todo</button>
+        <input
+          placeholder="What do you need to do?"
+          ref={(node) => (input = node)} />
+        <button 
+          type="submit">Add Todo</button>
       </form>
     </div>
   );
