@@ -1,16 +1,9 @@
 import React from 'react';
-import Footer from './Footer';
-import AddTodo from '../containers/AddTodo';
-import VisibleTodoList from '../containers/VisibleTodoList';
 import "../style/App.css"
+import { RouterProvider } from 'react-router-dom'
+import router from '../router';
 
-const App = () => (
-  <div className='container'>
-    <h1>ToDo List</h1>
-    <AddTodo />
-    <VisibleTodoList />
-    <Footer />
-  </div>
-);
+
+const App = () => <RouterProvider router={router}></RouterProvider>
 
 export default App;

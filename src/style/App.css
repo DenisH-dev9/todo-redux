@@ -12,17 +12,56 @@ color: #9ad8e6;
 h1 {
   font-size: 36px;
 }
+.todoList {
+  width: 70%;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
 .todo {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  word-wrap: break-word;
 }
 .todoText {
   cursor: pointer;
   user-select: none;
   list-style-type: none;
+  width: 80%;
+  margin: 2px 8px;
+  font-size: 18px;
+  
 }
 .removeTodoButton {
-  width: 30px;
+  width: 20px;
+  height: 20px;
   background-color: red;
+}
+.addTodo {
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+}
+.addTodo input {
+  width: 400px;
+  border: none;
+  border-bottom: 2px solid #9ad8e6;;
+  outline: none;
+  padding: 2px;
+  text-align: center;
+  font-size: 16px;
+}
+.addTodo button {
+
+}
+.linkButton {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  margin-top: 2px;
 }
 
 

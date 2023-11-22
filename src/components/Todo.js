@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom'
 
 const Todo = ({ toggleTodo, removeTodo, completed, text }) => (
   <div className='todo'>
@@ -19,6 +20,12 @@ const Todo = ({ toggleTodo, removeTodo, completed, text }) => (
     >
       {text}
     </li>
+      <NavLink to="/edit">
+        <button
+          className="toEdit linkButton"
+        >
+        </button>
+      </NavLink>
     <button 
       className='removeTodoButton'
       onClick={removeTodo}
